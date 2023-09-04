@@ -1,0 +1,6 @@
+Linked List is better than Array in the following ways:
+-> You dont need to pre-allocate space
+-> Insertion is easier
+
+-> BigO of Linked List traversal is O(n)
+-> Accessing element by value is O(n)

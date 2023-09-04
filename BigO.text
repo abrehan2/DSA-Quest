@@ -1,0 +1,16 @@
+-> Big O: It measures the running time of your program depending on the input size
+-> Time = a*n + b, where b is constant. Any linear function can be represented by time = a*n + b
+-> The time it takes to execute a program is equally proportional to the number of computations a program is doing
+-> We have to keep the fastest growing term and then drop the constant(s)
+
+-> Rules for time complexity:
+-> 1- Keep fastest growing term --> time = a*n
+-> 2- Drop constants --> time = O(n), where a is constant
+
+-> BigO refers to very large value of n. Hence if you have a function like, time = 5*n^2 + 3*n + 20 the it's time complexity is O(n^2)
+
+-> Space complexity: It depends on the number of data structures you are using. Such as, the space complexity for binary search is O(logn)
+
+-> Dynamic memory allocation for arrays incurs overhead each time the current capacity is reached. When this occurs, a new memory segment is allocated somewhere in the memory area. If the current capacity is 30 and an element needs to be added in the 31st position, the current capacity will be multiplied by 2 and then added to the previous capacity, resulting in a new capacity of 90. This process is referred to as geometric progression (extra information)
+
+-> A static array has a fixed size, while a dynamic array does not have a fixed size
