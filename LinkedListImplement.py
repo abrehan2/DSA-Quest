@@ -24,6 +24,24 @@ class Linked_list:
 
         itr.next = Node(data, None)
 
+    def insert_values(self, values):
+        self.head = None
+
+        for data in values:
+            self.insert_at_end(data)
+
+    def get_linked_list_length(self):
+        if self.head is None:
+            print("Linked list is empty")
+
+        itr = self.head
+        count = 0
+        while itr:
+            count = count + 1
+            itr = itr.next
+
+        return count
+
     def print(self):
         if self.head is None:
             print("Linked list is empty")
