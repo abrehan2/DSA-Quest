@@ -41,6 +41,47 @@ class Linked_list:
             itr = itr.next
 
         return count
+    
+    def remove_at(self, index):
+
+          if index < 0 or index > self.get_linked_list_length():
+              raise Exception("Invalid index given")
+  
+          if index == 0:
+              self.head = self.head.next
+              return
+  
+          count = 0
+          itr = self.head
+  
+          while itr:
+              if count == index-1:
+                  itr.next = itr.next.next
+                  break
+  
+              itr = itr.nxt
+              count = count + 1
+
+
+    def insert_at(self, index, data):
+        if index < 0 or index > self.get_linked_list_length():
+            raise Exception("Invalid index given")
+
+        if index == 0:
+            self.insert_at_beginning(data)
+            return
+
+        count = 0
+        itr = self.head
+        while itr:
+            if count == index - 1:
+                node = Node(data, itr.next)
+                itr.next = node
+                break
+
+            itr = itr.next
+            count += 1
+
 
     def print(self):
         if self.head is None:
