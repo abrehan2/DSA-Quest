@@ -4,3 +4,10 @@ Linked List is better than Array in the following ways:
 
 -> BigO of Linked List traversal is O(n)
 -> Accessing element by value is O(n)
+
+Uses of Linked List:
+-> Stacks and queues
+-> Image gallery
+-> Music player
+-> Browser
+-> Hash map and hash set (whenever there is a collision we handle it with chaining using doubly linked list)
