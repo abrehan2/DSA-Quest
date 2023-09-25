@@ -1,0 +1,2 @@
+-> Push/pop element: O(1)
+-> Search element by value: O(n)
